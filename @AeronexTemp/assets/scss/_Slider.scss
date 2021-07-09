@@ -1,0 +1,204 @@
+.SliderBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.owl-dots{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+
+/* :: 8.0 Hero CSS */
+.welcome-area {
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-slides {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.SliderBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.welcome-slides .owl-prev,
+.welcome-slides .owl-next {
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: rgba(20, 20, 20, 0.4);
+    position: absolute;
+    top: calc(50% - 33px);
+    left: 30px;
+    z-index: 10;
+    text-align: center;
+    line-height: 66px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.welcome-slides .owl-prev:hover,
+.welcome-slides .owl-prev:focus,
+.welcome-slides .owl-next:hover,
+.welcome-slides .owl-next:focus {
+    background-color: #fc6060;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .welcome-slides .owl-prev,
+    .welcome-slides .owl-next {
+        left: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .welcome-slides .owl-prev,
+    .welcome-slides .owl-next {
+        width: 40px;
+        left: 15px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 44px;
+    }
+}
+
+.welcome-slides .owl-next {
+    left: auto;
+    right: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .welcome-slides .owl-next {
+        right: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .welcome-slides .owl-next {
+        right: 15px;
+    }
+}
+
+.single-welcome-slide {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    height: 640px;
+    background-color: #fc6060;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-welcome-slide {
+        height: 560px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-welcome-slide {
+        height: 540px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .single-welcome-slide {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .single-welcome-slide {
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .single-welcome-slide {
+        height: 340px;
+    }
+}
+
+.single-welcome-slide .welcome-text {
+    position: relative;
+    z-index: 1;
+}
+
+.single-welcome-slide .welcome-text h2 {
+    font-weight: 700;
+    font-size: 70px;
+    display: block;
+    margin-bottom: 0;
+    background: -webkit-linear-gradient(#fcfcfc, #ffe89e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 767px) {
+    .single-welcome-slide .welcome-text h2 {
+        font-size: 42px;
+    }
+}
+
+.single-welcome-slide .welcome-text p {
+    color: #ffffff;
+    margin-bottom: 50px;
+    display: block;
+}
+
+.single-welcome-slide .welcome-text .hero-mail-contact {
+    color: #ffffff;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.single-welcome-slide .welcome-text .hero-mail-contact:hover,
+.single-welcome-slide .welcome-text .hero-mail-contact:focus {
+    color: #fc6060;
+}
+
+.owl-nav .owl-next,
+.owl-nav .owl-prev{
+    background: rgba(6, 78, 124, .4) !important;
+    outline: none !important;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    &:focus{
+        outline: none !important;
+    }
+    &:hover{
+        background: $navLinksActive !important;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    .owl-nav .owl-next,
+    .owl-nav .owl-prev{
+        height: 50px !important;
+        width: 50px !important;
+        i.fas{
+            font-weight: 600 !important;
+            margin: 0 !important;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.cursor-dot,
+.cursor-follower {
+    position: fixed;
+    user-select: none;
+    pointer-events: none;
+    transform-origin: center center;
+    border-radius: 100%;
+    z-index: 999999999;
+}
+
+.cursor-dot {
+    background-color: black;
+    width: 8px;
+    height: 8px;
+    /*transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;*/
+    transform: scale(1);
+    /* mix-blend-mode: difference; */
+}
+
+.cursor-dot.active {
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+.cursor-dot.hovered {
+    opacity: 1;
+}
+
+.cursor-follower {
+    background-color: rgba(49, 180, 209, .4);
+    border: 1px solid black;
+    width: 28px;
+    height: 28px;
+    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+    transform: translate(5px, 5px);
+    z-index: 999999998 !important;
+    /* mix-blend-mode: difference; */
+}
+
+.cursor-follower.active {
+    opacity: 0.6;
+    transform: scale(2.2);
+}
+
+.cursor-follower.hovered {
+    opacity: .4;
+}
+
+.aeronex-cursor.shrinkCursor .cursor-dot,
+.aeronex-cursor.shrinkCursor .cursor-follower {
+    width: 0;
+    height: 0;
+    border: none;
+    transition: all 400ms ease-in-out;
+}

@@ -1,0 +1,31 @@
+#banner {
+    width: 100%;
+    //background-color: rgba(20, 20, 20, 1);
+    position: relative;
+
+    .bannerContainer{
+        height: 100vh;
+        padding: 6%;
+        text-align: center;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+    }
+}
+
+
+.bannerLeft{
+    flex: 40%;
+    padding: 40px;
+    background-color: rgba(230, 230, 230, 1);
+}
+.bannerRight{
+    flex: 60%;
+    background-color: rgba(230, 230, 230, 1);
+}
+
+

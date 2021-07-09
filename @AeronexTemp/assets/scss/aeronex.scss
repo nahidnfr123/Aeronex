@@ -1,0 +1,27 @@
+@import './Variables';
+@import './Default';
+@import './Cursor';
+@import './TopBar';
+@import './NavBar';
+@import './Banner';
+@import './Slider';
+//@import './Stars';
+@import './Footer';
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+#app {
+  min-height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  background-color: $Bg_Light;
+}
+
+
+// :root{
+//   filter: invert(1) hue-rotate(180deg);
+// }
+

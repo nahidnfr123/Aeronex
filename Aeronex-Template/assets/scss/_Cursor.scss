@@ -1,0 +1,29 @@
+
+.cursor{
+    will-change: transform;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 2px solid rgba(20,40,40, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+
+    box-shadow: 4px 4px 6px rgba(20,20,20, .2);
+    transition: all 300ms ease-in-out;
+    transition-property: background-color, transform;
+    transform-origin: 100% 100%;
+    mix-blend-mode: exclusion;
+
+    &.hover{
+        transform: scale(1.6);
+        background-color: black;
+    }
+}
+
+.hoverItems.hoveredLink{
+    color: coral;
+}

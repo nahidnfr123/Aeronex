@@ -1,0 +1,45 @@
+
+$darkBackground: rgba(26, 30, 48, 1);
+
+@mixin darkElement {
+   background-color: rgba(30,38,46,1) !important;
+}
+
+
+/*Dark Theme*/
+//$Bg_Light: rgba(230, 230, 230, 1);
+$Bg_Light: rgba(255, 255, 255, 1);
+
+
+
+$navLinks : #064E7C;
+$navLinkHover: rgb(65, 160, 255);
+$navLinksActive : #FBB039;
+
+
+@mixin flexCenter($height) {
+    height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin noSelect {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@mixin transition($Time) {
+    -webkit-transition: all $Time ease-in-out 0s !important;
+    -moz-transition: all $Time ease-in-out 0s !important;
+    -ms-transition: all $Time ease-in-out 0s !important;
+    -o-transition: all $Time ease-in-out 0s !important;
+    transition: all $Time ease-in-out 0s !important;
+}
+
+
+

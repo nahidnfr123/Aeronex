@@ -1,0 +1,23 @@
+.aeronex-topbar{
+    height: 30px;
+    width: 100%;
+    max-width: 100%;
+    background-color: $darkBackground;
+    color: white;
+    font-size: 13px;
+    
+    position: relative;
+    z-index: 1000;
+
+    padding: 0 4%;
+    span{
+        line-height: 30px;
+        a{
+            text-decoration: none;
+            color:  $navLinkHover;
+            &:hover{
+                color: $navLinksActive;
+            }
+        }
+    }
+}
